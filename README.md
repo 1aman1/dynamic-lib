@@ -1,6 +1,12 @@
 # dynamic-lib
 implementation for dynamic library 
 
-* for running the binary RUN $ make all 
+* Execute the binary
+```sh
+$ make all 
+```
 
-* for cleaning the binary RUN $ make clean 
+* Clean the generated files
+```sh
+$ make clean
+```
