@@ -21,7 +21,7 @@ int main()
                   << dlerror() << std::endl;
     }
 
-    std::cout << "using square function" << func(4) << std::endl;
+    std::cout << "using square function :" << func(4) << std::endl;
 
     dlclose(loadedLibrary);
 
