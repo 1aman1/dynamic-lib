@@ -1,6 +1,6 @@
 extern "C"
 {
-    int square(int x)
+    int squareFn(int x)
     {
         return x * x;
     }

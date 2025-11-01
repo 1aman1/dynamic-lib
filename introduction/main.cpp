@@ -13,7 +13,7 @@ int main()
                   << dlerror() << std::endl;
     }
 
-    squareFunc func = reinterpret_cast<squareFunc>(dlsym(loadedLibrary, "square"));
+    squareFunc func = reinterpret_cast<squareFunc>(dlsym(loadedLibrary, "squareFn"));
 
     if (!func)
     {
@@ -21,7 +21,7 @@ int main()
                   << dlerror() << std::endl;
     }
 
-    std::cout << "using square function :" << func(4) << std::endl;
+    std::cout << "using square function : " << func(4) << std::endl;
 
     dlclose(loadedLibrary);
 

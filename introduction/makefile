@@ -1,9 +1,9 @@
 libsquare.so : square.cpp
-	g++ -shared -o libsquare.so square.cpp
+	g++ -shared square.cpp -o libsquare.so
 
 all : main.cpp libsquare.so
-	g++ -o executable.exe main.cpp -ldl
+	g++ main.cpp -ldl -o executable.exe 
 
-clean : 
-	rm -rf executable.exe
+clean :
 	rm -rf libsquare.so
+	rm -rf executable.exe
